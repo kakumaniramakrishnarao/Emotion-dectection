@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}"> -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Emotion Detection</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="output-box">
+        <p id="output-emotion"></p>
+        <p id="output-emoji"></p>
+      </div>
+      <div class="audiobox-container">
+        <img src="/img/play.svg" alt="play" id="playbutton">
+        <img src="/img/stopbutton.svg" alt="stop" id="stopbutton">
+      </div>
+        <div class="center-container">
+          <div class="record-container">
+            <img src="/img/mic.svg"  alt="record mic" id="record">
+            <img src="/img/greencircle.png"  alt="recording" id="greenCircle">
+          </div>
+          <div class="semi-circle-container">
+            <div class="timer-container">
+              <p id="timer">0</p>
+            </div>
+            <div id="filepicker-container" class="filepicker-container">
+              <label for="file-picker-inp">
+                <img src="/img/upload.svg" alt="upload" id="upload">
+              </label>
+              <input type="file" id="file-picker-inp" name="file-picker-inp" accept="audio/wav">
+            </div>
+        </div>
+        <div class="quotes-box">
+          <img id="gif-output" src="" alt="">
+        </div>
+        </div>
+        <div class="stop-container">
+          <img src="/img/stop.svg" alt="stop record" id="stop">
+        </div>
+        <div class="cancel-container">
+          <img src="/img/cancel.svg" alt="cancel record" id="cancel">
+        </div>
+        <div class="happybomb">
+          <img src="/img/happy/1.png">
+          <img id="bombtwo" src="/img/happy/2.png">
+          <img src="/img/happy/3.png">
+
+          <img src="/img/happy/1.png">
+          <img src="/img/happy/2.png">
+          <img src="/img/happy/3.png">
+
+          <img src="/img/happy/1.png">
+        </div>
+    </div>
+  </body>
+  <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+  <script src="/js/EmotionsData.js"></script>
+  <script src="/js/app.js"></script>
+</html>
